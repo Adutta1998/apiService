@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <form method="POST">
+                        {% csrf_token %}
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Name</span>
+                        </div>
+                        <input type="text" class="form-control">
+                    </div>
+                    
+                    <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Email</span>
+                            </div>
+                            <input type="text" class="form-control">
+                            <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon1">example@example.com</span>
+                            </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Mobile No.</span>
+                            </div>
+                            <input type="text" class="form-control">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Date Of Birth</span>
+                        </div>
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Address</span>
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Image</span>
+                        </div>
+                        <input type="file" name="" id="" class="form-control">
+                    </div>
+                    <input type="submit" value="Submit Form" class="btn btn-outline-success">
+                </form>
+            </div>
+        </div>
+    </div>    
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+
+</script>
+</body>
+</html>
